@@ -4,6 +4,9 @@
         @include flexbox;
 
         &>div {
+            @include flexbox;
+            @include flex-direction(column);
+            @include justify-content(center);
             width: 70%; 
         }
 
@@ -23,8 +26,7 @@
         figure {
             width: 60%;
 text-align: center;
-            img {
-                max-width: 40%;
+            img { 
                 border-radius: 50%;
                 border:8px solid $lila;
                  background-color: $brown;

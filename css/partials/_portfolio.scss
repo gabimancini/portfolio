@@ -11,20 +11,27 @@
     .gallery__item {
         @include flexbox;
         @include justify-content(center);
+        height: 40vh;
         width: 32%;
         padding: 15px;
         position: relative;
         align-items: center; 
         margin-top: 20px;
         border: 3px solid $violet;
+        text-align: center;
 
-        &:hover>.overlay {
+        &:hover{
             opacity: 1;
+            background-color: $violet;
+           border: 20px solid $violet;
             transition: 1.5s;
             -webkit-transition: 1.5s;
             -moz-transition: 1.5s;
             -ms-transition: 1.5s;
             -o-transition: 1.5s;
+        }
+        &:hover >a >.title{
+            display: block;
         }
 
         .gallery__img {
@@ -33,22 +40,21 @@
         }
     }
 
-    .overlay {
-        position: absolute;
-        padding: 20px;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(59, 34, 93, .85);
-        top: 0;
-        left: 0;
-        opacity: 0;
-    }
-
     .title {
+        display: none;
+        position: absolute;
+    left: 35%;
+    top: 40%;
         color: #fff;
         text-transform: uppercase;
         font-size: 1.1em;
-    }
+        padding: .5em;
+        border: 4px solid #fff;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
 
 }
