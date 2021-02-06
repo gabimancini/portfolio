@@ -1,37 +1,40 @@
-.contact-form {
-    @include flexbox;
-    form{
-        width: 60%;
-        padding-right:1.8em;
-        label{
-            color: $lila;
+#contact {
+    padding-bottom: 6em;
+    .contact-info {
+        @include flexbox;
+
+        &>div {
+            width: 70%; 
         }
-        textarea{
-            width: 100%;
-            resize: none;
-            height: 33%;
-        }
-        input{
-            height: 30px;
-        }
-        textarea, input{
-            border: 2px solid $violet;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-}
-    }
- figure{
-            width: 40%;
-            img{
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 18% 100%, 50% 75%, 0% 75%);
+
+        .contact-icon { 
+            margin-bottom: 1.2em;
+            i {
+                color: #8f9195;
+                font-size: 27px;
+            }
+
+            span {
+                font-size: 16px;
+                margin-left: 15px;
             }
         }
-    .form-group {
-        @include flexbox;
-        @include flex-direction(column);
-       
+
+        figure {
+            width: 60%;
+text-align: center;
+            img {
+                max-width: 40%;
+                border-radius: 50%;
+                border:8px solid $lila;
+                 background-color: $brown;
+                /*clip-path: polygon(3% 0, 76% 0, 80% 51%, 100% 54%, 67% 74%, 50% 75%, 3% 75%);
+                */
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}
+        }
     }
 }

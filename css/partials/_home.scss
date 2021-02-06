@@ -7,7 +7,7 @@
         @include flexbox; 
         @include flex-direction(column);
         @include justify-content(center);
-
+        padding-top: 5em;
         .social-icons{ 
             &>a{
                 margin-right: 15px;

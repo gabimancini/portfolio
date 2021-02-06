@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 27px;
@@ -14,7 +18,7 @@ body {
 
 header,
 section {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -124,6 +128,7 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 5em;
 }
 
 #home-banner .home-content .social-icons > a {
@@ -239,49 +244,48 @@ header nav ul li a {
   font-size: 1.1em;
 }
 
-.contact-form {
+#contact {
+  padding-bottom: 6em;
+}
+
+#contact .contact-info {
   display: flex;
 }
 
-.contact-form form {
+#contact .contact-info > div {
+  width: 70%;
+}
+
+#contact .contact-info .contact-icon {
+  margin-bottom: 1.2em;
+}
+
+#contact .contact-info .contact-icon i {
+  color: #8f9195;
+  font-size: 27px;
+}
+
+#contact .contact-info .contact-icon span {
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+#contact .contact-info figure {
   width: 60%;
-  padding-right: 1.8em;
+  text-align: center;
 }
 
-.contact-form form label {
-  color: #8B829E;
-}
-
-.contact-form form textarea {
-  width: 100%;
-  resize: none;
-  height: 33%;
-}
-
-.contact-form form input {
-  height: 30px;
-}
-
-.contact-form form textarea, .contact-form form input {
-  border: 2px solid #3b225d;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.contact-form figure {
-  width: 40%;
-}
-
-.contact-form figure img {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 18% 100%, 50% 75%, 0% 75%);
-}
-
-.contact-form .form-group {
-  display: flex;
-  flex-direction: column;
+#contact .contact-info figure img {
+  max-width: 40%;
+  border-radius: 50%;
+  border: 8px solid #8B829E;
+  background-color: #e0cdc2;
+  /*clip-path: polygon(3% 0, 76% 0, 80% 51%, 100% 54%, 67% 74%, 50% 75%, 3% 75%);
+                */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 footer {
