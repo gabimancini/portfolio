@@ -1,0 +1,34 @@
+#home-banner{
+    @include flexbox;  
+    padding-top: 0;
+    &>div{
+        width: 50%;
+    }.home-content{
+        @include flexbox; 
+        @include flex-direction(column);
+        @include justify-content(center);
+
+        .social-icons{ 
+            &>a{
+                margin-right: 15px;
+                &>i{
+                    font-size: 1.2em;
+                    color: rgb(204, 204, 204);
+                }
+            }
+        } 
+    }
+    
+    .home-right-image{
+        text-align: right;
+    }
+    .home-right-image{
+        height: 85%;
+        width: 50%;
+        z-index: -1;
+        right: 0;
+        position: absolute;
+        background  : url("../../assets/img/perfil.jpg") no-repeat 50% 15%;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    }
+}

@@ -1,0 +1,15 @@
+header{
+    @include flexbox;
+    @include  justify-content(space-between); 
+    @include align-items(center);
+    img{
+        max-width: 60px;
+    }
+    nav ul{
+        @include flexbox;
+        li a{
+            padding: 1em;
+            color:$violet;
+        }
+    }
+}
