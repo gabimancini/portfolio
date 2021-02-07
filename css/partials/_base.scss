@@ -20,6 +20,10 @@ section {
 section {
     padding-top: 2em;
     padding-bottom: 2em;
+    @media screen and (max-width:768px){
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 
     &>div {
         padding: 20px 15px;
@@ -51,6 +55,10 @@ h2 {
     margin-bottom: 30px;
     line-height: 52px;
     text-transform: capitalize;
+    @media screen and (max-width:768px){
+        font-size: 2.3em;
+        margin-bottom: 0;
+    }
 }
 
 h3 {
@@ -60,6 +68,9 @@ h3 {
     margin-bottom: 20px;
     letter-spacing: 2px;
     color: #797979;
+}
+h4{
+    font-size: 1.5em;
 }
 
 h5 {
@@ -87,4 +98,10 @@ h5 {
     background-size: 200% auto;
     max-width: 40%;
     margin-top: 40px;
+    @media screen and (max-width:768px){
+        max-width: 70%;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 1.2em;
+    }
 }

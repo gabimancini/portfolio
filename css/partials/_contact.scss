@@ -2,12 +2,18 @@
     padding-bottom: 6em;
     .contact-info {
         @include flexbox;
+        @media screen and (max-width:768px){
+            display: block;
+        }
 
         &>div {
             @include flexbox;
             @include flex-direction(column);
             @include justify-content(center);
             width: 70%; 
+            @media screen and (max-width:768px){
+                width: 100%;
+            }
         }
 
         .contact-icon { 
@@ -26,6 +32,9 @@
         figure {
             width: 60%;
 text-align: center;
+@media screen and (max-width:768px){
+    width: 100%;
+}
             img { 
                 border-radius: 50%;
                 border:8px solid $lila;

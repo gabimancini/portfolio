@@ -5,11 +5,56 @@ header{
     img{
         max-width: 60px;
     }
-    nav ul{
+   
+    nav {
+        @media screen and (max-width:768px){
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+        input {
+            display: none;
+            &:checked ~ ul{
+                @media screen and (max-width:768px){
+                    display: block;
+                }
+            }
+          }
+          label {
+            box-sizing: border-box;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+            line-height: 30px;
+            font-weight: bold;
+            text-align: center;
+            user-select: none;
+            float: right;
+          }
+        ul{
         @include flexbox;
-        li a{
+        @media screen and (max-width:768px){
+            display: none;
+            background-color: #fff;
+            margin-top: 70px;
+        }
+      
+        li{
+            @media screen and (max-width:768px){
+              padding: 15px 10px;
+            }
+              a{
             padding: 1em;
             color:$violet;
         }
+        }
+       
     }
+ 
+ 
+}
+ 
 }

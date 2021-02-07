@@ -7,7 +7,9 @@
     @include flex-wrap(wrap);
     @include justify-content(space-between);
     padding-top: 0;
-
+    @media screen and (max-width:768px){
+        display: block;
+    }
     .gallery__item {
         @include flexbox;
         @include justify-content(center);
@@ -19,7 +21,9 @@
         margin-top: 20px;
         border: 3px solid $violet;
         text-align: center;
-
+        @media screen and (max-width:768px){
+            width: 100%;
+        }
         &:hover{
             opacity: 1;
             background-color: $violet;
@@ -45,11 +49,12 @@
         position: absolute;
     left: 35%;
     top: 40%;
-        color: #fff;
+        color: $violet;
         text-transform: uppercase;
         font-size: 1.1em;
+        font-weight: bolder;
         padding: .5em;
-        border: 4px solid #fff;
+        background-color: #fff;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
