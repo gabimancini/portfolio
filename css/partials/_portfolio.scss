@@ -13,7 +13,7 @@
     .gallery__item {
         @include flexbox;
         @include justify-content(center);
-        height: 40vh;
+        height: 30vh;
         width: 32%;
         padding: 15px;
         position: relative;
