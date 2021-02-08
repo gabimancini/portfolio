@@ -6,6 +6,7 @@ header{
         max-width: 60px;
     }
    
+   
     nav {
         @media screen and (max-width:768px){
             position: absolute;
@@ -21,6 +22,8 @@ header{
             }
           }
           label {
+              display: none;
+              @media screen and (max-width:768px){
             box-sizing: border-box;
             display: inline-block;
             border: 1px solid black;
@@ -33,6 +36,7 @@ header{
             text-align: center;
             user-select: none;
             float: right;
+              }
           }
         ul{
         @include flexbox;

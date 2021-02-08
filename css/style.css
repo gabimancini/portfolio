@@ -165,18 +165,24 @@ header nav input {
 }
 
 header nav label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  margin: 20px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-  float: right;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    float: right;
+  }
 }
 
 header nav ul {
