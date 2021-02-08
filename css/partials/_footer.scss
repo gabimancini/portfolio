@@ -1,14 +1,21 @@
-footer{
+footer {
     background-color: #000;
     color: #fff;
-    &>div{
+.footer-logo{
+    img{
+        max-width: 60px;
+    }
+}
+    &>div {
         text-align: center;
         padding: 1.5em;
     }
-     a{
-padding: 1em;
-i{
-    color: $brown;
-}
+
+    a {
+        padding: 1em;
+
+        i {
+            color: $brown;
+        }
     }
 }
