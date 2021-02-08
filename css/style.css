@@ -245,7 +245,7 @@ header nav ul li a {
 
 @media screen and (max-width: 768px) {
   #about-me {
-    display: block;
+    flex-direction: column;
   }
 }
 
@@ -267,6 +267,12 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  #about-me .about-content {
+    order: -1;
+  }
 }
 
 .services-bottom-image {

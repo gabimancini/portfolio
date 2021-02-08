@@ -1,7 +1,7 @@
 #about-me{
     @include flexbox;
     @media screen and (max-width:768px){
-        display:block;
+        flex-direction: column;
     }
     img{
         max-width: 100%;
@@ -16,6 +16,8 @@
         @include flexbox; 
         @include flex-direction(column);
         @include justify-content(center);
-
+        @media screen and (max-width:768px){
+            order:-1;
+        }
     }
  }
