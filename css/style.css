@@ -234,7 +234,7 @@ header nav ul li a {
 
 @media screen and (max-width: 768px) {
   #home-banner .home-right-image {
-    height: 60%;
+    height: 50%;
   }
 }
 
