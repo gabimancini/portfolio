@@ -1,6 +1,9 @@
 #home-banner{
     @include flexbox;  
     padding-top: 0;
+    @media screen and (max-width:768px){
+       height: 100vh;
+    }
     &>div{
         width: 50%;
     }.home-content{
@@ -11,6 +14,7 @@
         @media screen and (max-width:768px){
             background-color: rgba(255,255,255,.5);
             width: 100%;
+            @include justify-content(start);
         }
         .social-icons{ 
             &>a{
@@ -21,6 +25,12 @@
                 }
             }
         } 
+        .button{
+            @media screen and (max-width:768px){
+               display: none;
+            }
+             
+        }
     }
     
     .home-right-image{
@@ -33,7 +43,8 @@
         background  : url("../assets/img/perfil.jpg") no-repeat 50% 15%;
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
         @media screen and (max-width:768px){
-          height: 50%;
+          height: 90vh;
+          width: 70%;
         }
     }
 }

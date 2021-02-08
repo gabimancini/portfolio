@@ -59,6 +59,12 @@ h1 {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.28em;
+  }
+}
+
 h2 {
   font-size: 42px;
   font-weight: 700;
@@ -93,6 +99,13 @@ h5 {
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #05364d;
+}
+
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 1.6em;
+    line-height: 1.5;
+  }
 }
 
 .button {
@@ -194,6 +207,12 @@ header nav ul li a {
   padding-top: 0;
 }
 
+@media screen and (max-width: 768px) {
+  #home-banner {
+    height: 100vh;
+  }
+}
+
 #home-banner > div {
   width: 50%;
 }
@@ -209,6 +228,7 @@ header nav ul li a {
   #home-banner .home-content {
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
+    justify-content: start;
   }
 }
 
@@ -219,6 +239,12 @@ header nav ul li a {
 #home-banner .home-content .social-icons > a > i {
   font-size: 1.2em;
   color: #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+  #home-banner .home-content .button {
+    display: none;
+  }
 }
 
 #home-banner .home-right-image {
@@ -234,7 +260,8 @@ header nav ul li a {
 
 @media screen and (max-width: 768px) {
   #home-banner .home-right-image {
-    height: 50%;
+    height: 90vh;
+    width: 70%;
   }
 }
 
