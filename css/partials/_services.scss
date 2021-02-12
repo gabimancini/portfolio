@@ -1,7 +1,13 @@
+.services-content{
+    @media screen and (max-width:768px){
+        padding-bottom: 0;
+    }
+}
 .services-bottom-image{
     @include flexbox;
     @media screen and (max-width:768px){
         display: block;
+        padding-top: 0;
     }
     .service-item{
          width: 33%;  

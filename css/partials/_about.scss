@@ -3,6 +3,11 @@
     @media screen and (max-width:768px){
         flex-direction: column;
     }
+    h2{
+        @media screen and (max-width:768px){
+            padding-bottom: 20px;
+        }
+    }
     img{
         max-width: 100%;
     }
